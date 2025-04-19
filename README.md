@@ -1,14 +1,13 @@
 # Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
 
 ## Project Overview
+Proyek ini bertujuan untuk mengembangkan sebuah sistem rekomendasi anime yang dapat memberikan saran kepada pengguna berdasarkan preferensi dan interaksi mereka dengan berbagai anime. Dengan menggunakan data yang mencakup informasi pengguna, rating yang diberikan pada anime, serta atribut terkait anime seperti jenis, sumber, dan skor keseluruhan, sistem ini akan memanfaatkan teknik-teknik machine learning untuk memprediksi anime yang kemungkinan besar disukai oleh pengguna.
 
-Pada bagian ini, Kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+Sistem rekomendasi ini penting karena membantu pengguna menemukan anime yang sesuai dengan selera mereka dari ribuan pilihan yang tersedia di platform streaming. Dengan data yang ada, sistem dapat mengidentifikasi pola dalam rating pengguna dan anime, sehingga memberikan rekomendasi yang lebih personal dan relevan. Rekomendasi yang lebih tepat tidak hanya meningkatkan pengalaman pengguna, tetapi juga dapat meningkatkan engagement di platform, mendorong pengguna untuk menonton lebih banyak anime yang sesuai dengan preferensi mereka.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa proyek ini penting untuk diselesaikan.
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
+Dengan mengimplementasikan algoritma seperti Collaborative Filtering , proyek ini bertujuan untuk membangun model yang dapat belajar dari data pengguna untuk memberikan rekomendasi yang lebih akurat dan disesuaikan. Proyek ini dapat diterapkan pada berbagai platform streaming anime untuk meningkatkan kepuasan pengguna dan engagement, serta memperkenalkan anime yang mungkin tidak ditemukan oleh pengguna secara manual.
   
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
+Referensi: [Analyzing the effectiveness of collaborative filtering and content-based filtering methods in anime recommendation systemsi]([https://scholar.google.com/](http://repository.uin-malang.ac.id/17878/)) 
 
 ## Business Understanding
 
