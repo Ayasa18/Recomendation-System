@@ -7,7 +7,7 @@ Sistem rekomendasi ini penting karena membantu pengguna menemukan anime yang ses
 
 Dengan mengimplementasikan algoritma seperti Collaborative Filtering , proyek ini bertujuan untuk membangun model yang dapat belajar dari data pengguna untuk memberikan rekomendasi yang lebih akurat dan disesuaikan. Proyek ini dapat diterapkan pada berbagai platform streaming anime untuk meningkatkan kepuasan pengguna dan engagement, serta memperkenalkan anime yang mungkin tidak ditemukan oleh pengguna secara manual.
   
-Referensi: [Analyzing the effectiveness of collaborative filtering and content-based filtering methods in anime recommendation systemsi]([https://scholar.google.com/](http://repository.uin-malang.ac.id/17878/)) 
+Referensi: [Analyzing the effectiveness of collaborative filtering and content-based filtering methods in anime recommendation systemsi](https://scholar.google.com/](http://repository.uin-malang.ac.id/17878/) 
 
 ## Business Understanding
 
