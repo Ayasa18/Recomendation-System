@@ -32,6 +32,22 @@ Sumber Data: Dataset yang digunakan diperoleh dari platform Kaggle, dengan datas
 Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengenai anime dan ulasan pengguna. Berikut adalah penjelasan mengenai setiap kolom:
 
 
+| **Kolom**             | **Tipe Data** | **Deskripsi**                                                           |
+|-----------------------|---------------|-------------------------------------------------------------------------|
+| `Anime Rank`          | int64         | Peringkat anime berdasarkan popularitas di platform                      |
+| `Anime Title`         | object        | Judul anime                                                            |
+| `Anime URL`           | object        | URL untuk informasi lebih lanjut tentang anime                          |
+| `Username`            | object        | Nama pengguna yang memberikan rating                                    |
+| `Review Date`         | object        | Tanggal ulasan diberikan oleh pengguna                                  |
+| `Episodes Watched`    | object        | Jumlah episode yang sudah ditonton oleh pengguna                        |
+| `Review Likes`        | int64         | Jumlah suka yang diterima pada ulasan                                  |
+| `Overall Rating`      | int64         | Rating keseluruhan yang diberikan oleh pengguna                         |
+| `Story Rating`        | int64         | Rating khusus untuk cerita anime                                        |
+| `Animation Rating`    | int64         | Rating khusus untuk animasi anime                                       |
+| `Sound Rating`        | int64         | Rating khusus untuk kualitas suara anime                                |
+| `Character Rating`    | int64         | Rating khusus untuk karakter anime                                      |
+| `Enjoyment Rating`    | int64         | Rating berdasarkan tingkat kesenangan yang dirasakan pengguna saat menonton anime |
+| `Review`              | object        | Teks ulasan yang diberikan oleh pengguna                                |
 
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
