@@ -1,11 +1,11 @@
 # Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
 
 ## Project Overview
-Proyek ini bertujuan untuk mengembangkan sebuah sistem rekomendasi anime yang dapat memberikan saran kepada pengguna berdasarkan preferensi dan interaksi mereka dengan berbagai anime. Dengan menggunakan data yang mencakup informasi pengguna, rating yang diberikan pada anime, serta atribut terkait anime seperti jenis, sumber, dan skor keseluruhan, sistem ini akan memanfaatkan teknik-teknik machine learning untuk memprediksi anime yang kemungkinan besar disukai oleh pengguna.
+Proyek ini bertujuan untuk mengembangkan sebuah sistem rekomendasi anime yang mampu memberikan saran personal kepada pengguna berdasarkan preferensi dan interaksi mereka terhadap berbagai judul anime. Dengan memanfaatkan data pengguna dan rating terhadap anime, sistem ini dibangun menggunakan teknik Collaborative Filtering berbasis model neural network, khususnya pendekatan Neural Collaborative Filtering (NCF).
 
-Sistem rekomendasi ini penting karena membantu pengguna menemukan anime yang sesuai dengan selera mereka dari ribuan pilihan yang tersedia di platform streaming. Dengan data yang ada, sistem dapat mengidentifikasi pola dalam rating pengguna dan anime, sehingga memberikan rekomendasi yang lebih personal dan relevan. Rekomendasi yang lebih tepat tidak hanya meningkatkan pengalaman pengguna, tetapi juga dapat meningkatkan engagement di platform, mendorong pengguna untuk menonton lebih banyak anime yang sesuai dengan preferensi mereka.
+Sistem rekomendasi ini dirancang untuk meningkatkan pengalaman pengguna dengan mempermudah penemuan anime baru yang sesuai dengan minat mereka. Hal ini penting karena banyak pengguna kesulitan menemukan anime yang relevan dari ribuan pilihan yang tersedia. Dengan memberikan rekomendasi yang akurat dan personal, sistem ini diharapkan mampu meningkatkan engagement pengguna di platform streaming anime.
 
-Dengan mengimplementasikan algoritma seperti Collaborative Filtering , proyek ini bertujuan untuk membangun model yang dapat belajar dari data pengguna untuk memberikan rekomendasi yang lebih akurat dan disesuaikan. Proyek ini dapat diterapkan pada berbagai platform streaming anime untuk meningkatkan kepuasan pengguna dan engagement, serta memperkenalkan anime yang mungkin tidak ditemukan oleh pengguna secara manual.
+Model yang dibangun memanfaatkan informasi rating yang diberikan oleh pengguna terhadap anime tertentu. Dengan pendekatan ini, sistem dapat mempelajari pola preferensi dan memberikan prediksi terhadap anime lain yang mungkin disukai pengguna tersebut. Pendekatan ini juga dapat dikembangkan untuk platform lain seperti film, musik, atau e-commerce.
   
 Referensi: [[Analyzing the effectiveness of collaborative filtering and content-based filtering methods in anime recommendation systemsi]](http://repository.uin-malang.ac.id/17878/) 
 
@@ -16,18 +16,16 @@ Pada bagian ini, Anda perlu menjelaskan proses klarifikasi masalah.
 Bagian laporan ini mencakup:
 
 ### Problem Statements
-
-Menjelaskan pernyataan masalah:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
-
+* Bagaimana memberikan rekomendasi anime yang sesuai dengan preferensi pengguna berdasarkan histori penilaian anime?
+* Apakah metode collaborative filtering mampu mengidentifikasi kesamaan antar pengguna dan memberikan saran anime yang relevan?
+* Bagaimana akurasi sistem rekomendasi yang dibangun dalam menyarankan anime yang disukai pengguna?
 ### Goals
 
-Menjelaskan tujuan proyek yang menjawab pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+* Membangun sistem rekomendasi anime berbasis collaborative filtering.
+* Menggunakan data rating pengguna terhadap anime untuk menemukan pola kesukaan yang serupa antar pengguna.
+* Mengevaluasi performa sistem rekomendasi dengan metrik akurasi rekomendasi seperti RMSE, MSE dan MAE.
+
+
 
 Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
 
