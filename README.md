@@ -178,10 +178,30 @@ Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren pe
 ### Uji Rekomendasi Model Yang Telah dibuat 
   1. Prediksi Rating dari Pasangan User-Anime
      Pertama kita mencoba untuk mendapatkan Rekomendasi, hal pertama adalah saya mencari anime_id untuk Gintama°(Untuk menyesuaikan Prediksi)
-     <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png" alt="Top 10 Anime" width="600"/>
+<p align="center">
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png" alt="Top 10 Anime" width="500"/>
  </p>
+    Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
+    Misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
+    "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
+ <p align="center">
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/PrediksiRating.png" alt="Top 10 Anime" width="500"/>
+ </p>   
 
+  2. Menemukan 10 anime terbaik yang direkomendasikan oleh model untuk 1 user tertentu.
+     Dengan kata lain, model memprediksi semua anime mana saja yang kemungkinan besar akan disukai oleh user tersebut, lalu mengambil 10 prediksi tertinggi.
+<p align="center">
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/10AnimeRekomendasi.png" alt="Top 10 Anime" width="500"/>
+ </p>   
+
+    Model rekomendasi berhasil mengidentifikasi 10 anime terbaik yang diprediksi paling disukai oleh user dengan ID 10, berdasarkan rating yang telah dipelajari selama pelatihan. Model ini mengevaluasi seluruh daftar anime dan memberikan skor prediksi (rating) untuk masing-masing, lalu memilih 10 dengan nilai tertinggi. Rekomendasi tersebut mencerminkan preferensi pengguna secara personal, seperti terlihat dari munculnya judul-judul populer seperti Gintama°, Shingeki no Kyojin Season 3 Part 2, dan Mononoke, yang kemungkinan besar akan memberikan pengalaman menonton yang memuaskan bagi pengguna tersebut.
+
+<p align="center">
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/Visualisasiuser10.png" alt="Top 10 Anime" width="500"/>
+ </p>   
+
+     Berdasarkan hasil visualisasi rekomendasi, terlihat bahwa Gintama° menjadi anime dengan prediksi rating tertinggi untuk User 10, diikuti oleh Sora yori mo Tooi Basho dan Shingeki no Kyojin Season 3 Part 2, yang menunjukkan bahwa model cenderung merekomendasikan anime dengan popularitas dan kualitas tinggi sesuai preferensi user tersebut.
+ 
 _Catatan:_
 - _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
 - Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
