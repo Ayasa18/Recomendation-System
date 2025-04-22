@@ -205,7 +205,24 @@ Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren pe
  </p>   
 
      Berdasarkan hasil visualisasi rekomendasi, terlihat bahwa Gintama° menjadi anime dengan prediksi rating tertinggi untuk User 10, diikuti oleh Sora yori mo Tooi Basho dan Shingeki no Kyojin Season 3 Part 2, yang menunjukkan bahwa model cenderung merekomendasikan anime dengan popularitas dan kualitas tinggi sesuai preferensi user tersebut.
+
+
+ ### Kesimpulan
  
+Model sistem rekomendasi anime berbasis Neural Collaborative Filtering yang dibangun dalam proyek ini berhasil memenuhi tujuan utamanya, yaitu memberikan rekomendasi anime yang sesuai dengan preferensi pengguna berdasarkan histori rating. Dengan menggunakan dataset dari Kaggle dan melalui proses preprocessing yang komprehensif, model dilatih menggunakan fungsi loss MSE dan teknik EarlyStopping untuk mencegah overfitting.
+
+Hasil evaluasi model menunjukkan performa yang cukup baik berdasarkan metrik evaluasi berikut:
+
+* Mean Absolute Error (MAE): 0.1557 nilai rendah, menunjukkan bahwa rata-rata selisih antara prediksi dan rating asli relatif kecil.
+
+* Mean Squared Error (MSE): 0.0466 nilai rendah, memperkuat bahwa kesalahan prediksi tidak terlalu menyimpang jauh dari nilai aktual.
+
+* Root Mean Squared Error (RMSE): 0.1981 nilai rendah, mengindikasikan bahwa model cukup akurat dalam merekomendasikan anime yang disukai pengguna.
+
+Model ini terbukti mampu mengidentifikasi pola kesamaan antar pengguna dan menangkap preferensi individual secara efisien. Dalam uji coba, sistem mampu merekomendasikan 10 anime teratas yang relevan dengan selera pengguna, bahkan untuk pengguna yang belum memberikan banyak rating sebelumnya (cold-start problem ringan).
+
+Dengan demikian, sistem rekomendasi ini dapat diandalkan sebagai solusi yang efektif dan personalisasi dalam membantu pengguna menemukan anime yang mereka sukai. Sistem ini juga berpotensi meningkatkan user engagement, memperpanjang waktu interaksi dengan platform, dan mendorong loyalitas pengguna dalam jangka panjang
+
 _Catatan:_
 - _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
 - Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
