@@ -150,7 +150,8 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
         - MeanAbsoluteError (MAE): Mengukur rata-rata selisih absolut antara prediksi dan nilai asli.
         - RootMeanSquaredError (RMSE): Mengukur deviasi prediksi dari nilai sebenarnya, lebih sensitif terhadap error besar.
 3. Callback - Early Stopping
-     Menggunakan EarlyStopping untuk menghentikan pelatihan jika tidak ada peningkatan val_loss selama 5 epoch, dengan restore_best_weights=True untuk mengembalikan bobot model terbaik.
+   
+   Menggunakan EarlyStopping untuk menghentikan pelatihan jika tidak ada peningkatan val_loss selama 5 epoch, dengan restore_best_weights=True untuk mengembalikan bobot model terbaik.
 
 4. Pelatihan Model
     Model dilatih menggunakan fungsi .fit() dengan parameter:
