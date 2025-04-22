@@ -135,6 +135,7 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
 
  1. Inisialisasi Model
     Model didefinisikan melalui subclassing dari tf.keras.Model dengan nama AnimeRecommender.
+    
         * User Embedding dan Anime Embedding: Masing-masing pengguna dan anime diubah menjadi vektor berdimensi embedding_size (misalnya 50). Layer ini belajar merepresentasikan fitur laten dari pengguna dan anime.
         * Bias: Selain vektor embedding, masing-masing pengguna dan anime juga memiliki bias scalar untuk menyesuaikan prediksi lebih akurat.
         * Regularisasi: l2 regularization digunakan untuk mencegah overfitting.
