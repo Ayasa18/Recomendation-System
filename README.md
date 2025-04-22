@@ -95,31 +95,31 @@ Pada tahap ini kita akan melakukan proses transformasi pada data sehingga menjad
     
  2. Memfilter Data Berdasarkan Rating
 <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/FilterRating.png" alt="Top 10 Anime" width="200"/>
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/FilterRating.png" alt="Top 10 Anime" width="400"/>
  </p>
    Memilih hanya data dengan rating tertentu untuk menjaga kualitas input bagi model rekomendasi.
    
  3. Memilih dan Merename Kolom
 <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/MemilihdanRenameKolom.png" alt="Top 10 Anime" width="200"/>
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/MemilihdanRenameKolom.png" alt="Top 10 Anime" width="400"/>
  </p>
    Mengambil kolom yang relevan seperti user, anime title, dan rating, lalu mengganti nama kolom agar lebih konsisten.
    
  4. Normalisasi Rating
 <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/NormalisasiRating.png" alt="Top 10 Anime" width="200"/>
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/NormalisasiRating.png" alt="Top 10 Anime" width="400"/>
  </p>
    Melakukan transformasi rating ke dalam skala yang seragam agar model dapat belajar secara optimal.
    
  5. Encode Username dan Anime Title ke bentuk angka
 <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SetelahNormalisasiEncode.png" alt="Top 10 Anime" width="200"/>
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SetelahNormalisasiEncode.png" alt="Top 10 Anime" width="400"/>
  </p>
    Mengubah data kategorikal seperti nama pengguna dan judul anime menjadi representasi numerik menggunakan label encoding.
    
  6. Split Dataset dengan Ratio 80:20
 <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SplitDataset.png" alt="Top 10 Anime" width="200"/>
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SplitDataset.png" alt="Top 10 Anime" width="400"/>
  </p>
    Membagi data menjadi 80% data latih dan 20% data uji untuk mengevaluasi performa model.
    
