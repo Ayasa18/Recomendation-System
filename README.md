@@ -181,14 +181,18 @@ Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren pe
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png" alt="Top 10 Anime" width="500"/>
  </p>
-    Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
-    Misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
-    "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
+    
+  Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
+
+  Misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
+  
+  "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
  <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/PrediksiRating.png" alt="Top 10 Anime" width="500"/>
  </p>   
 
   2. Menemukan 10 anime terbaik yang direkomendasikan oleh model untuk 1 user tertentu.
+     
      Dengan kata lain, model memprediksi semua anime mana saja yang kemungkinan besar akan disukai oleh user tersebut, lalu mengambil 10 prediksi tertinggi.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/10AnimeRekomendasi.png" alt="Top 10 Anime" width="500"/>
