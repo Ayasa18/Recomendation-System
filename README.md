@@ -77,6 +77,13 @@ Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengen
     
     Matriks korelasi rating aspek menunjukkan hubungan antar kategori seperti Overall, Story, Animation, Sound, Character, dan Enjoyment. Nilai korelasi tertinggi (1.00) terlihat pada hubungan masing-masing kategori dengan dirinya sendiri, yang diharapkan. Korelasi tertinggi antar kategori berbeda ada antara Story dan Overall (0.73), Character dan Overall (0.73), serta Character dan Enjoyment (0.86), menunjukkan bahwa aspek cerita dan karakter memiliki pengaruh kuat terhadap rating keseluruhan dan kepuasan. Sebaliknya, korelasi terendah terlihat antara Animation dan Overall (0.48) serta Sound dan Overall (0.52), mengindikasikan bahwa animasi dan suara memiliki pengaruh lebih kecil terhadap rating keseluruhan. Secara umum, aspek Story, Character, dan Enjoyment saling berkorelasi cukup kuat (0.84-0.86), sementara Animation dan Sound cenderung memiliki korelasi lebih rendah dengan aspek lainnya (0.48-0.81).
 
+#### Jumlah Review Per Tahun
+    Untuk menganalisis tren atau pola jumlah ulasan yang diberikan oleh pengguna setiap tahunnya. Dengan mengetahui jumlah review yang diberikan per tahun, kita dapat melihat apakah ada peningkatan atau penurunan aktivitas pengguna dalam memberikan ulasan seiring waktu. Hal ini juga bisa memberikan insight tentang popularitas anime pada periode tertentu, serta memberikan gambaran tentang kecenderungan pengguna dalam memberikan feedback sepanjang waktu. Pada visualisasai dibawah review di mulai dari tahun 2007 dan review tertinggi atau terbanyak di berikan pada tahun 2020
+
+ <p align="center">
+  <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/JumlahReviewTahun.png?raw=true" alt="Top 10 Anime" width="600"/>
+</p>
+    
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
