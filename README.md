@@ -141,7 +141,27 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
         * Regularisasi: l2 regularization digunakan untuk mencegah overfitting.
         * Dot Product: Interaksi antara pengguna dan anime dimodelkan sebagai dot product antara embedding mereka, ditambahkan dengan bias masing-masing.
         * Aktivasi: Output dari model diproses dengan fungsi aktivasi sigmoid untuk menjaga nilai prediksi berada di rentang [0, 1].
+2. Kompilasi Model
+   Model dikompilasi dengan konfigurasi sebagai berikut:
 
+        * Loss Function: Menggunakan MeanSquaredError, cocok untuk regresi prediksi rating.
+        * Optimizer: Menggunakan Adam, optimasi berbasis adaptif yang sangat baik untuk deep learning.
+        * Metrics:
+        - MeanAbsoluteError (MAE): Mengukur rata-rata selisih absolut antara prediksi dan nilai asli.
+        - RootMeanSquaredError (RMSE): Mengukur deviasi prediksi dari nilai sebenarnya, lebih sensitif terhadap error besar.
+3. Callback - Early Stopping
+     Menggunakan EarlyStopping untuk menghentikan pelatihan jika tidak ada peningkatan val_loss selama 5 epoch, dengan restore_best_weights=True untuk mengembalikan bobot model terbaik.
+
+4. Pelatihan Model
+    Model dilatih menggunakan fungsi .fit() dengan parameter:
+   
+          * Data: x_train dan y_train untuk training, x_val dan y_val untuk validasi.
+          * Epochs: Maksimal 50 iterasi pelatihan.
+          * Batch Size: Menggunakan 256 sampel per batch.
+          * Shuffle: Data diacak tiap epoch untuk membantu generalisasi.
+          * Verbose: Menampilkan progress pelatihan.
+          * Callbacks: Menggunakan EarlyStopping untuk efisiensi pelatihan.
+   
 ## Evaluation
 Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
 
