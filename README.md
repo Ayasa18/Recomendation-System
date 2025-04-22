@@ -88,9 +88,11 @@ Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengen
 ## Data Preparation
 Pada tahap ini kita akan melakukan proses transformasi pada data sehingga menjadi bentuk yang cocok untuk proses pemodelan. Ada beberapa tahap persiapan data perlu dilakukan, yaitu:
  1. Memeriksa Struktur dan Informasi Dataset, pengecekan jumlah kolom, tipe data, dan missing values.
+    
     <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/null.png?raw=true" alt="Top 10 Anime" width="600"/>
-    </p>
+ </p>
+    
  2. Memfilter Data Berdasarkan Rating
  3. Memilih dan Merename Kolom
  4. Normalisasi Rating
