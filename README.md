@@ -131,11 +131,15 @@ Pada tahap ini kita akan melakukan proses transformasi pada data sehingga menjad
  </p>
    
 ## Modeling
-Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
+Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang mempelajari interaksi antara pengguna dan item (anime) melalui embedding layers dan teknik pembelajaran non-linear.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menyajikan dua solusi rekomendasi dengan algoritma yang berbeda.
-- Menjelaskan kelebihan dan kekurangan dari solusi/pendekatan yang dipilih.
+ 1. Inisialisasi Model
+    Model didefinisikan melalui subclassing dari tf.keras.Model dengan nama AnimeRecommender.
+        * User Embedding dan Anime Embedding: Masing-masing pengguna dan anime diubah menjadi vektor berdimensi embedding_size (misalnya 50). Layer ini belajar merepresentasikan fitur laten dari pengguna dan anime.
+        * Bias: Selain vektor embedding, masing-masing pengguna dan anime juga memiliki bias scalar untuk menyesuaikan prediksi lebih akurat.
+        * Regularisasi: l2 regularization digunakan untuk mencegah overfitting.
+        * Dot Product: Interaksi antara pengguna dan anime dimodelkan sebagai dot product antara embedding mereka, ditambahkan dengan bias masing-masing.
+        * Aktivasi: Output dari model diproses dengan fungsi aktivasi sigmoid untuk menjaga nilai prediksi berada di rentang [0, 1].
 
 ## Evaluation
 Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
