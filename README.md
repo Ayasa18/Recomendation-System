@@ -30,7 +30,10 @@ Dalam era digital saat ini, meningkatnya minat terhadap anime dan pertumbuhan pe
 Sumber Data: Dataset yang digunakan diperoleh dari platform Kaggle, dengan dataset berjudul ["Top 10K Anime Details"](https://www.kaggle.com/datasets/stoicstatic/mal-top-10k-anime-details), yang berisi data tentang anime beserta ulasan yang diberikan oleh pengguna. Dataset ini mencakup 85,953 baris data yang berisi informasi tentang anime, termasuk rating yang diberikan oleh pengguna pada berbagai aspek anime.
 
 Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengenai anime dan ulasan pengguna. Berikut adalah penjelasan mengenai setiap kolom:
-![Kolom Dataset](Asset/KolomData.png)
+
+<p align="center">
+  <img src="Asset/KolomData.png" alt="Kolom Dataset" width="600"/>
+</p>
 
 
 | **Kolom**             | **Tipe Data** | **Deskripsi**                                                           |
