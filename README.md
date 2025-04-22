@@ -88,40 +88,41 @@ Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengen
 ## Data Preparation
 Pada tahap ini kita akan melakukan proses transformasi pada data sehingga menjadi bentuk yang cocok untuk proses pemodelan. Ada beberapa tahap persiapan data perlu dilakukan, yaitu:
  1. Memeriksa Struktur dan Informasi Dataset, pengecekan jumlah kolom, tipe data, dan missing values.
+    Melihat jumlah baris, kolom, tipe data, dan mengecek apakah terdapat data yang kosong atau hilang.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/25e7d3cb4f068fdc3938bf42e672e47219a9fd5a/Asset/null.png" alt="Top 10 Anime" width="200"/>
  </p>
-    Melihat jumlah baris, kolom, tipe data, dan mengecek apakah terdapat data yang kosong atau hilang.
     
  2. Memfilter Data Berdasarkan Rating
+    Memilih hanya data dengan rating tertentu untuk menjaga kualitas input bagi model rekomendasi.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/FilterRating.png" alt="Top 10 Anime" width="400"/>
  </p>
    Memilih hanya data dengan rating tertentu untuk menjaga kualitas input bagi model rekomendasi.
    
  3. Memilih dan Merename Kolom
+    Mengambil kolom yang relevan seperti user, anime title, dan rating, lalu mengganti nama kolom agar lebih konsisten.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/MemilihdanRenameKolom.png" alt="Top 10 Anime" width="400"/>
  </p>
-   Mengambil kolom yang relevan seperti user, anime title, dan rating, lalu mengganti nama kolom agar lebih konsisten.
    
  4. Normalisasi Rating
+    Melakukan transformasi rating ke dalam skala yang seragam agar model dapat belajar secara optimal.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/NormalisasiRating.png" alt="Top 10 Anime" width="400"/>
  </p>
-   Melakukan transformasi rating ke dalam skala yang seragam agar model dapat belajar secara optimal.
    
  5. Encode Username dan Anime Title ke bentuk angka
+    Mengubah data kategorikal seperti nama pengguna dan judul anime menjadi representasi numerik menggunakan label encoding.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SetelahNormalisasiEncode.png" alt="Top 10 Anime" width="400"/>
  </p>
-   Mengubah data kategorikal seperti nama pengguna dan judul anime menjadi representasi numerik menggunakan label encoding.
-   
+
  6. Split Dataset dengan Ratio 80:20
+    Membagi data menjadi 80% data latih dan 20% data uji untuk mengevaluasi performa model.
 <p align="center">
   <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SplitDataset.png" alt="Top 10 Anime" width="400"/>
  </p>
-   Membagi data menjadi 80% data latih dan 20% data uji untuk mengevaluasi performa model.
    
 ## Modeling
 Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
