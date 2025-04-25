@@ -147,18 +147,7 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
           * Verbose: Menampilkan progress pelatihan.
           * Callbacks: Menggunakan EarlyStopping untuk efisiensi pelatihan.
    
-## Evaluation
-
-Bagian Evaluasi dan Visualisasi bertujuan untuk mengukur performa model rekomendasi setelah proses pelatihan selesai serta menampilkan hasil evaluasi tersebut dalam bentuk visual. Evaluasi biasanya dilakukan dengan menggunakan metrik seperti MAE (Mean Absolute Error) dan RMSE (Root Mean Squared Error) untuk melihat seberapa akurat prediksi model dibandingkan dengan nilai rating sebenarnya.
-
-Hasil evaluasi menunjukkan bahwa model memiliki nilai Validation Loss (MSE) sebesar 0.0466, MAE sebesar 0.1557, dan RMSE sebesar 0.1981, yang mencerminkan performa prediksi model terhadap data validasi.
-
-
-![Evaluasi](https://github.com/Ayasa18/Recomendation-System/blob/9d76a6f045241720a1ea49a63497bd42f58b2c81/Asset/EvaluasiGrafik.png)
-
-Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren penurunan yang konsisten pada kedua metrik (train dan validasi), dengan nilai akhir mendekati nol. Penurunan MSE dari 0.10 ke 0, MAE dari 0.25 ke 0.05, dan RMSE dari 0.30 ke 0.10 mengindikasikan bahwa model semakin akurat dalam memprediksi data, baik pada data latih maupun validasi, tanpa tanda overfitting (karena val loss mengikuti tren train loss). Konsistensi penurunan tanpa fluktuasi besar menunjukkan proses pelatihan yang stabil dan efektif. Dengan demikian, model dapat disimpulkan memiliki kemampuan generalisasi yang baik, meskipun perlu dipastikan bahwa data validasi representatif dan tidak terjadi underfitting pada epoch akhir.
-
-### Uji Rekomendasi Model Yang Telah dibuat 
+### Uji Rekomendasi Model Yang Telah dibuat (Result 
   1. Prediksi Rating dari Pasangan User-Anime
      Pertama kita mencoba untuk mendapatkan Rekomendasi, hal pertama adalah saya mencari anime_id untuk Gintama°(Untuk menyesuaikan Prediksi)
 
@@ -187,6 +176,64 @@ Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren pe
 
      Berdasarkan hasil visualisasi rekomendasi, terlihat bahwa Gintama° menjadi anime dengan prediksi rating tertinggi untuk User 10, diikuti oleh Sora yori mo Tooi Basho dan Shingeki no Kyojin Season 3 Part 2, yang menunjukkan bahwa model cenderung merekomendasikan anime dengan popularitas dan kualitas tinggi sesuai preferensi user tersebut.
 
+## Evaluation
+
+Bagian Evaluasi dan Visualisasi bertujuan untuk mengukur performa model rekomendasi setelah proses pelatihan selesai serta menampilkan hasil evaluasi tersebut dalam bentuk visual. Evaluasi biasanya dilakukan dengan menggunakan metrik seperti MAE (Mean Absolute Error) dan RMSE (Root Mean Squared Error) untuk melihat seberapa akurat prediksi model dibandingkan dengan nilai rating sebenarnya.
+
+## ✅ Mean Squared Error (MSE)
+
+**Penjelasan:**
+MSE adalah rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual. Karena selisih dikuadratkan, MSE akan memberikan penalti besar terhadap kesalahan yang besar (outlier).
+
+**Rumus:**
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+**Keterangan:**
+- \( y_i \) = nilai aktual  
+- \( \hat{y}_i \) = nilai prediksi  
+- \( n \) = jumlah data  
+- Nilai MSE **tidak dalam satuan asli** (karena dikuadratkan)
+
+---
+
+## ✅ Root Mean Squared Error (RMSE)
+
+**Penjelasan:**
+RMSE adalah akar dari MSE. Metrik ini digunakan untuk mengukur rata-rata jarak antara hasil prediksi dengan nilai aktual dalam satuan yang sama dengan data aslinya, sehingga lebih mudah dipahami secara intuitif.
+
+**Rumus:**
+$$
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+$$
+
+**Keterangan:**
+- RMSE **menggunakan satuan yang sama dengan target**
+- Sensitif terhadap kesalahan besar (karena berasal dari MSE)
+
+---
+
+## ✅ Mean Absolute Error (MAE)
+
+**Penjelasan:**
+MAE adalah rata-rata dari nilai absolut selisih antara prediksi dan nilai aktual. MAE memberikan gambaran langsung tentang rata-rata kesalahan prediksi tanpa terlalu dipengaruhi oleh outlier.
+
+**Rumus:**
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
+$$
+
+**Keterangan:**
+- MAE **lebih tahan terhadap outlier** dibanding MSE dan RMSE
+- Nilai MAE **dalam satuan yang sama** dengan target
+
+Hasil evaluasi menunjukkan bahwa model memiliki nilai Validation Loss (MSE) sebesar 0.0466, MAE sebesar 0.1557, dan RMSE sebesar 0.1981, yang mencerminkan performa prediksi model terhadap data validasi.
+
+
+![Evaluasi](https://github.com/Ayasa18/Recomendation-System/blob/9d76a6f045241720a1ea49a63497bd42f58b2c81/Asset/EvaluasiGrafik.png)
+
+Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren penurunan yang konsisten pada kedua metrik (train dan validasi), dengan nilai akhir mendekati nol. Penurunan MSE dari 0.10 ke 0, MAE dari 0.25 ke 0.05, dan RMSE dari 0.30 ke 0.10 mengindikasikan bahwa model semakin akurat dalam memprediksi data, baik pada data latih maupun validasi, tanpa tanda overfitting (karena val loss mengikuti tren train loss). Konsistensi penurunan tanpa fluktuasi besar menunjukkan proses pelatihan yang stabil dan efektif. Dengan demikian, model dapat disimpulkan memiliki kemampuan generalisasi yang baik, meskipun perlu dipastikan bahwa data validasi representatif dan tidak terjadi underfitting pada epoch akhir.
 
  ### Kesimpulan
  
