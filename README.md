@@ -193,9 +193,12 @@ $$
 
 **Keterangan:**
 
-- \( y_i \) = nilai aktual  
-- \( \hat{y}_i \) = nilai prediksi  
-- \( n \) = jumlah data  
+- \( y_i \) = nilai aktual
+  
+- \( \hat{y}_i \) = nilai prediksi
+  
+- \( n \) = jumlah data
+  
 - Nilai MSE **tidak dalam satuan asli** (karena dikuadratkan)
 
 ---
