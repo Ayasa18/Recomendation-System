@@ -194,7 +194,7 @@ $$
 **Keterangan:**
 
 - `y_i` = nilai aktual
-- 
+  
 - `ŷ_i` = nilai prediksi
   
 - `n` = jumlah data
