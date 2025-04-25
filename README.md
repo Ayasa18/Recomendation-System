@@ -55,79 +55,65 @@ Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengen
 #### Top 10 Anime yang di Nilai Atau Di Review
       Tujuan dari analisis ini adalah untuk mengetahui anime yang mendapat perhatian atau popularitas tertinggi berdasarkan seberapa sering anime tersebut dinilai atau direview. Hal ini membantu untuk mengidentifikasi anime yang sedang tren atau menarik bagi banyak orang, serta memberikan wawasan mengenai preferensi atau minat pengguna dalam kategori anime tertentu. Pada visualisasi dibawah sekitar 10 anime teratas mendapat penilaian sebanyak 80 review atau penilaian
       
-  <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/Top10Anime.png?raw=true" alt="Top 10 Anime" width="600"/>
-</p>
+![10Anime](https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/Top10Anime.png)
 
 #### Distribusi Overall Rating
     Untuk memvisualisasikan sebaran atau distribusi rating keseluruhan yang diberikan oleh pengguna pada anime dalam dataset. Dengan mengetahui distribusi rating, kita bisa memahami bagaimana pengguna memberikan penilaian terhadap anime secara umum, apakah kebanyakan rating cenderung tinggi, rendah, atau tersebar merata di berbagai kategori rating. Ini membantu untuk mengidentifikasi tren umum dalam penilaian pengguna terhadap anime dan juga dapat menunjukkan bias atau ketidakseimbangan dalam pemberian rating.Berdasarkan diagram dibawah, nilai rating yang paling umum diberikan oleh user yaitu 8, dan yang paling rendah 1
 
-  <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/DistribusiOveralRating.png?raw=true" alt="Top 10 Anime" width="600"/>
-</p>
+![Rating](https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/DistribusiOveralRating.png)
 
 #### Korelasi Antar Rating
     Untuk menganalisis hubungan antara berbagai kategori rating yang diberikan oleh pengguna, seperti Story Rating, Animation Rating, Sound Rating, Character Rating, dan Enjoyment Rating. Dengan mengetahui korelasi antar rating, kita dapat memahami apakah pengguna yang memberikan rating tinggi pada satu aspek anime (misalnya cerita) juga cenderung memberikan rating tinggi pada aspek lainnya (seperti animasi atau karakter). Hal ini membantu untuk mengidentifikasi pola atau hubungan yang mungkin ada antara kualitas berbagai elemen anime dalam persepsi pengguna.
 
-  <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/KorelasiantarRating.png?raw=true" alt="Top 10 Anime" width="600"/>
-</p>
-    
+ ![Korelasi](https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/KorelasiantarRating.png)
+ 
     Matriks korelasi rating aspek menunjukkan hubungan antar kategori seperti Overall, Story, Animation, Sound, Character, dan Enjoyment. Nilai korelasi tertinggi (1.00) terlihat pada hubungan masing-masing kategori dengan dirinya sendiri, yang diharapkan. Korelasi tertinggi antar kategori berbeda ada antara Story dan Overall (0.73), Character dan Overall (0.73), serta Character dan Enjoyment (0.86), menunjukkan bahwa aspek cerita dan karakter memiliki pengaruh kuat terhadap rating keseluruhan dan kepuasan. Sebaliknya, korelasi terendah terlihat antara Animation dan Overall (0.48) serta Sound dan Overall (0.52), mengindikasikan bahwa animasi dan suara memiliki pengaruh lebih kecil terhadap rating keseluruhan. Secara umum, aspek Story, Character, dan Enjoyment saling berkorelasi cukup kuat (0.84-0.86), sementara Animation dan Sound cenderung memiliki korelasi lebih rendah dengan aspek lainnya (0.48-0.81).
 
 #### Jumlah Review Per Tahun
     Untuk menganalisis tren atau pola jumlah ulasan yang diberikan oleh pengguna setiap tahunnya. Dengan mengetahui jumlah review yang diberikan per tahun, kita dapat melihat apakah ada peningkatan atau penurunan aktivitas pengguna dalam memberikan ulasan seiring waktu. Hal ini juga bisa memberikan insight tentang popularitas anime pada periode tertentu, serta memberikan gambaran tentang kecenderungan pengguna dalam memberikan feedback sepanjang waktu. Pada visualisasai dibawah review di mulai dari tahun 2007 dan review tertinggi atau terbanyak di berikan pada tahun 2020
 
- <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/JumlahReviewTahun.png?raw=true" alt="Top 10 Anime" width="600"/>
-</p>
-    
+![Review](https://github.com/Ayasa18/Recomendation-System/blob/a9187ba190e6dc05f1e7999834eaf404fc0bdfa8/Asset/JumlahReviewTahun.png)
 
 ## Data Preparation
 Pada tahap ini kita akan melakukan proses transformasi pada data sehingga menjadi bentuk yang cocok untuk proses pemodelan. Ada beberapa tahap persiapan data perlu dilakukan, yaitu:
  1. Memeriksa Struktur dan Informasi Dataset, pengecekan jumlah kolom, tipe data, dan missing values.
     
     Melihat jumlah baris, kolom, tipe data, dan mengecek apakah terdapat data yang kosong atau hilang.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/25e7d3cb4f068fdc3938bf42e672e47219a9fd5a/Asset/null.png" alt="Top 10 Anime" width="200"/>
- </p>
+    
+![infodata](https://github.com/Ayasa18/Recomendation-System/blob/25e7d3cb4f068fdc3938bf42e672e47219a9fd5a/Asset/null.png)
     
  2. Memfilter Data Berdasarkan Rating
     
     Memilih hanya data dengan rating tertentu untuk menjaga kualitas input bagi model rekomendasi.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/FilterRating.png" alt="Top 10 Anime" width="400"/>
- </p>
+    
+![Filter](https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/FilterRating.png)
+
    Memilih hanya data dengan rating tertentu untuk menjaga kualitas input bagi model rekomendasi.
    
  3. Memilih dan Merename Kolom
     
     Mengambil kolom yang relevan seperti user, anime title, dan rating, lalu mengganti nama kolom agar lebih konsisten.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/MemilihdanRenameKolom.png" alt="Top 10 Anime" width="400"/>
- </p>
-   
+    
+![rename](https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/MemilihdanRenameKolom.png)
+
  4. Normalisasi Rating
     
     Melakukan transformasi rating ke dalam skala yang seragam agar model dapat belajar secara optimal.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/NormalisasiRating.png" alt="Top 10 Anime" width="400"/>
- </p>
-   
+    
+![Normalisasi](https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/NormalisasiRating.png)
+
  5. Encode Username dan Anime Title ke bentuk angka
     
     Mengubah data kategorikal seperti nama pengguna dan judul anime menjadi representasi numerik menggunakan label encoding.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SetelahNormalisasiEncode.png" alt="Top 10 Anime" width="400"/>
- </p>
+
+![encode](https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SetelahNormalisasiEncode.png)
 
  6. Split Dataset dengan Ratio 80:20
     
     Membagi data menjadi 80% data latih dan 20% data uji untuk mengevaluasi performa model.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SplitDataset.png" alt="Top 10 Anime" width="400"/>
- </p>
-   
+    
+![split](https://github.com/Ayasa18/Recomendation-System/blob/7af86543835da62029c05ebed171bbef42167515/Asset/SplitDataset.png)
+
 ## Modeling
 Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang mempelajari interaksi antara pengguna dan item (anime) melalui embedding layers dan teknik pembelajaran non-linear.
 
@@ -167,40 +153,37 @@ Bagian Evaluasi dan Visualisasi bertujuan untuk mengukur performa model rekomend
 
 Hasil evaluasi menunjukkan bahwa model memiliki nilai Validation Loss (MSE) sebesar 0.0466, MAE sebesar 0.1557, dan RMSE sebesar 0.1981, yang mencerminkan performa prediksi model terhadap data validasi.
 
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/9d76a6f045241720a1ea49a63497bd42f58b2c81/Asset/EvaluasiGrafik.png" alt="Top 10 Anime" width="800"/>
- </p>
+
+![Evaluasi](https://github.com/Ayasa18/Recomendation-System/blob/9d76a6f045241720a1ea49a63497bd42f58b2c81/Asset/EvaluasiGrafik.png)
 
 Berdasarkan grafik MSE, MAE, dan RMSE selama 50 epoch, model menunjukkan tren penurunan yang konsisten pada kedua metrik (train dan validasi), dengan nilai akhir mendekati nol. Penurunan MSE dari 0.10 ke 0, MAE dari 0.25 ke 0.05, dan RMSE dari 0.30 ke 0.10 mengindikasikan bahwa model semakin akurat dalam memprediksi data, baik pada data latih maupun validasi, tanpa tanda overfitting (karena val loss mengikuti tren train loss). Konsistensi penurunan tanpa fluktuasi besar menunjukkan proses pelatihan yang stabil dan efektif. Dengan demikian, model dapat disimpulkan memiliki kemampuan generalisasi yang baik, meskipun perlu dipastikan bahwa data validasi representatif dan tidak terjadi underfitting pada epoch akhir.
 
 ### Uji Rekomendasi Model Yang Telah dibuat 
   1. Prediksi Rating dari Pasangan User-Anime
      Pertama kita mencoba untuk mendapatkan Rekomendasi, hal pertama adalah saya mencari anime_id untuk Gintama°(Untuk menyesuaikan Prediksi)
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png" alt="Top 10 Anime" width="500"/>
- </p>
+
+![Uji](https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png)
+
     
       Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
     
       Misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
       
       "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
- <p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/PrediksiRating.png" alt="Top 10 Anime" width="500"/>
- </p>   
+
+ ![uji](https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/PrediksiRating.png)
 
   2. Menemukan 10 anime terbaik yang direkomendasikan oleh model untuk 1 user tertentu.
      
      Dengan kata lain, model memprediksi semua anime mana saja yang kemungkinan besar akan disukai oleh user tersebut, lalu mengambil 10 prediksi tertinggi.
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/10AnimeRekomendasi.png" alt="Top 10 Anime" width="500"/>
- </p>   
+
+![10terbaik](https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/10AnimeRekomendasi.png)
 
     Model rekomendasi berhasil mengidentifikasi 10 anime terbaik yang diprediksi paling disukai oleh user dengan ID 10, berdasarkan rating yang telah dipelajari selama pelatihan. Model ini mengevaluasi seluruh daftar anime dan memberikan skor prediksi (rating) untuk masing-masing, lalu memilih 10 dengan nilai tertinggi. Rekomendasi tersebut mencerminkan preferensi pengguna secara personal, seperti terlihat dari munculnya judul-judul populer seperti Gintama°, Shingeki no Kyojin Season 3 Part 2, dan Mononoke, yang kemungkinan besar akan memberikan pengalaman menonton yang memuaskan bagi pengguna tersebut.
 
-<p align="center">
-  <img src="https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/Visualisasiuser10.png" alt="Top 10 Anime" width="500"/>
- </p>   
+
+![terbaik](https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/Visualisasiuser10.png)
+
 
      Berdasarkan hasil visualisasi rekomendasi, terlihat bahwa Gintama° menjadi anime dengan prediksi rating tertinggi untuk User 10, diikuti oleh Sora yori mo Tooi Basho dan Shingeki no Kyojin Season 3 Part 2, yang menunjukkan bahwa model cenderung merekomendasikan anime dengan popularitas dan kualitas tinggi sesuai preferensi user tersebut.
 
