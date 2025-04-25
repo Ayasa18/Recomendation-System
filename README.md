@@ -192,6 +192,7 @@ $$
 $$
 
 **Keterangan:**
+
 - \( y_i \) = nilai aktual  
 - \( \hat{y}_i \) = nilai prediksi  
 - \( n \) = jumlah data  
