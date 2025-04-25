@@ -205,9 +205,9 @@ Model ini terbukti mampu mengidentifikasi pola kesamaan antar pengguna dan menan
 Dengan demikian, sistem rekomendasi ini dapat diandalkan sebagai solusi yang efektif dan personalisasi dalam membantu pengguna menemukan anime yang mereka sukai. Sistem ini juga berpotensi meningkatkan user engagement, memperpanjang waktu interaksi dengan platform, dan mendorong loyalitas pengguna dalam jangka panjang
 
 ## Reference
-[1](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/20612/0) Jayaperwira, Iklil, Agung Toto Wibowo, and Dade Nurjanah. "Anime Rekomendasi Menggunakan Collaborative Filtering." eProceedings of Engineering 10.3 (2023).
+[1] [Jayaperwira, Iklil, Agung Toto Wibowo, and Dade Nurjanah. "Anime Rekomendasi Menggunakan Collaborative Filtering." eProceedings of Engineering 10.3 (2023).](https://openlibrarypublications.telkomuniversity.ac.id/index.php/engineering/article/view/20612/0)
 
-[2](https://www.jurnal.stkippgritulungagung.ac.id/index.php/jipi/article/view/4222)  Roziqiin, Nazhif Muafa, and Muhammad Faisal. "Sistem rekomendasi pemilihan anime menggunakan user-based collaborative filtering." JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika) 9.1 (2024): 299-306.
+[2] [Roziqiin, Nazhif Muafa, and Muhammad Faisal. "Sistem rekomendasi pemilihan anime menggunakan user-based collaborative filtering." JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika) 9.1 (2024): 299-306.](https://www.jurnal.stkippgritulungagung.ac.id/index.php/jipi/article/view/4222)
 
-[3](https://medium.com/data-science/neural-collaborative-filtering-96cef1009401)  Penyaringan Kolaboratif Neural. Meningkatkan penyaringan kolaboratif… | oleh Abhishek Sharma | Arsip TDS | Medium
-Accessed: 2025-04-22
+[3] [Penyaringan Kolaboratif Neural. Meningkatkan penyaringan kolaboratif… | oleh Abhishek Sharma | Arsip TDS | Medium
+Accessed: 2025-04-22](https://medium.com/data-science/neural-collaborative-filtering-96cef1009401)
