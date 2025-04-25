@@ -180,12 +180,13 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
 
 Bagian Evaluasi dan Visualisasi bertujuan untuk mengukur performa model rekomendasi setelah proses pelatihan selesai serta menampilkan hasil evaluasi tersebut dalam bentuk visual. Evaluasi biasanya dilakukan dengan menggunakan metrik seperti MAE (Mean Absolute Error) dan RMSE (Root Mean Squared Error) untuk melihat seberapa akurat prediksi model dibandingkan dengan nilai rating sebenarnya.
 
-## ✅ Mean Squared Error (MSE)
+### ✅ Mean Squared Error (MSE)
 
 **Penjelasan:**
 MSE adalah rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual. Karena selisih dikuadratkan, MSE akan memberikan penalti besar terhadap kesalahan yang besar (outlier).
 
 **Rumus:**
+
 $$
 \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
@@ -198,12 +199,13 @@ $$
 
 ---
 
-## ✅ Root Mean Squared Error (RMSE)
+### ✅ Root Mean Squared Error (RMSE)
 
 **Penjelasan:**
 RMSE adalah akar dari MSE. Metrik ini digunakan untuk mengukur rata-rata jarak antara hasil prediksi dengan nilai aktual dalam satuan yang sama dengan data aslinya, sehingga lebih mudah dipahami secara intuitif.
 
 **Rumus:**
+
 $$
 \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
 $$
@@ -214,12 +216,13 @@ $$
 
 ---
 
-## ✅ Mean Absolute Error (MAE)
+### ✅ Mean Absolute Error (MAE)
 
 **Penjelasan:**
 MAE adalah rata-rata dari nilai absolut selisih antara prediksi dan nilai aktual. MAE memberikan gambaran langsung tentang rata-rata kesalahan prediksi tanpa terlalu dipengaruhi oleh outlier.
 
 **Rumus:**
+
 $$
 \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|
 $$
