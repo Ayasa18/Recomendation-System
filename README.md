@@ -31,9 +31,7 @@ Sumber Data: Dataset yang digunakan diperoleh dari platform Kaggle, dengan datas
 
 Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengenai anime dan ulasan pengguna. Berikut adalah penjelasan mengenai setiap kolom:
 
-<p align="center">
-  <img src="Asset/KolomData.png" alt="https://github.com/Ayasa18/Recomendation-System/blob/759be900aaae230a9eb500188ea08080fb3a70b3/Asset/KolomData.png" width="300"/>
-</p>
+![Tabel](https://github.com/Ayasa18/Recomendation-System/blob/16d9c53e9b29f657ca12b340aa5e1cd7c152ba53/Asset/KolomData.png)
 
 
 | **Kolom**             | **Tipe Data** | **Deskripsi**                                                           |
