@@ -144,7 +144,7 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
           * Verbose: Menampilkan progress pelatihan.
           * Callbacks: Menggunakan EarlyStopping untuk efisiensi pelatihan.
    
-### Uji Rekomendasi Model Yang Telah dibuat (Result 
+### Uji Rekomendasi Model Yang Telah dibuat (Result)
   1. Prediksi Rating dari Pasangan User-Anime
      Pertama kita mencoba untuk mendapatkan Rekomendasi, hal pertama adalah saya mencari anime_id untuk Gintama°(Untuk menyesuaikan Prediksi)
 
