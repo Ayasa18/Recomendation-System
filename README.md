@@ -150,9 +150,9 @@ Model ini merupakan pendekatan deep learning dalam sistem rekomendasi, yang memp
 
 ![Uji](https://github.com/Ayasa18/Recomendation-System/blob/33ec79497c1e54991a4c4c5781630925caaa9df4/Asset/MencariID.png?raw=true)
       
-  Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
-  , misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
-  "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
+   Lalu untuk mengetahui Prediksi Rating untuk Satu Pasangan User–Anime
+    , misalnya  ingin tahu Gintama yang telahh kita dapatkan anime_id nya:
+    "Kalau user dengan ID 10 (setelah encoding) menonton anime dengan ID 1196, berapa rating yang kemungkinan akan dia berikan?"
 
  ![uji](https://github.com/Ayasa18/Recomendation-System/blob/bf22b83833639897832dbf699de72cb6702a4f3b/Asset/PrediksiRating.png?raw=true)
 
