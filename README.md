@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/64fe157c-1c41-43ba-a402-ecd131cc3c2e)# Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
+# Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
 
 ## Project Overview
 Proyek ini bertujuan untuk mengembangkan sebuah sistem rekomendasi anime yang mampu memberikan saran personal kepada pengguna berdasarkan preferensi dan interaksi mereka terhadap berbagai judul anime. Dengan memanfaatkan data pengguna dan rating terhadap anime, sistem ini dibangun menggunakan teknik Collaborative Filtering berbasis model neural network, khususnya pendekatan Neural Collaborative Filtering (NCF).
