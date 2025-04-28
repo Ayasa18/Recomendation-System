@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
+![image](https://github.com/user-attachments/assets/64fe157c-1c41-43ba-a402-ecd131cc3c2e)# Laporan Proyek Machine Learning - Aditiya Saputra ( Recomendation System)
 
 ## Project Overview
 Proyek ini bertujuan untuk mengembangkan sebuah sistem rekomendasi anime yang mampu memberikan saran personal kepada pengguna berdasarkan preferensi dan interaksi mereka terhadap berbagai judul anime. Dengan memanfaatkan data pengguna dan rating terhadap anime, sistem ini dibangun menggunakan teknik Collaborative Filtering berbasis model neural network, khususnya pendekatan Neural Collaborative Filtering (NCF).
@@ -31,7 +31,7 @@ Sumber Data: Dataset yang digunakan diperoleh dari platform Kaggle, dengan datas
 
 Struktur Dataset: Dataset ini memiliki 14 kolom dengan berbagai informasi mengenai anime dan ulasan pengguna. Berikut adalah penjelasan mengenai setiap kolom:
 
-![Tabel](https://github.com/Ayasa18/Recomendation-System/blob/16d9c53e9b29f657ca12b340aa5e1cd7c152ba53/Asset/KolomData.png)
+![Tabel]([https://github.com/Ayasa18/Recomendation-System/blob/16d9c53e9b29f657ca12b340aa5e1cd7c152ba53/Asset/KolomData.png](https://github.com/Ayasa18/Recomendation-System/blob/main/Asset/KolomData.png?raw=true))
 
 
 | **Kolom**             | **Tipe Data** | **Deskripsi**                                                           |
